@@ -1,0 +1,30 @@
+<ParameterList>
+  <ParameterList name="NOX Solver">
+    <Parameter name="Nonlinear Solver" type="string" value="Line Search Based"/>
+    <ParameterList name="Line Search">
+      <Parameter name="Method" type="string" value="More'-Thuente"/>
+    </ParameterList>
+    <ParameterList name="Status Test">
+      <Parameter name="Max Iterations" type="int" value="20"/>
+      <Parameter name="Tolerance" type="double" value="1e-8"/>
+    </ParameterList>
+    <ParameterList name="Linear Solver">
+      <Parameter name="Type" type="string" value="Amesos"/>
+    </ParameterList>
+    <ParameterList name="Printing">
+      <ParameterList name="Output Information">
+	<Parameter name="Error" type="bool" value="True"/>
+	<Parameter name="Warning" type="bool" value="True"/>
+	<Parameter name="Outer Iteration" type="bool" value="True"/>
+	<Parameter name="Inner Iteration" type="bool" value="True"/>
+	<Parameter name="Parameters" type="bool" value="False"/>
+	<Parameter name="Linear Solver Details" type="bool" value="True"/>
+	<Parameter name="Test Details" type="bool" value="True"/>
+	<Parameter name="Stepper Iteration" type="bool" value="True"/>
+	<Parameter name="Stepper Details" type="bool" value="True"/>
+	<Parameter name="Stepper Parameters" type="bool" value="True"/>
+	<Parameter name="Debug" type="bool" value="False"/>
+      </ParameterList>
+    </ParameterList>
+  </ParameterList>
+</ParameterList>
